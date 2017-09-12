@@ -1,0 +1,33 @@
+=begin
+1.repartir las cartas
+2.Preguntar al usuario si continua o se detiene
+	Si pide carta,ir al punto 4.
+	De lo contrario,volver al punto 2.
+	Si se detiene
+		Ir al punto 3.
+3.Determinar el valor que tiene el repartidor.
+	Si es menor a 17,entregarse a otra carta
+		Si se pasa, ir al punto 4.
+		De lo contrario ir al punto 3.
+	De lo contrario
+		ir al punto 4.
+4.Determina al ganador
+	Si el usuario se paso gana el repatidor
+	Si el repartidor se paso gana el usuario
+	Si el repartidor tiene mas que el usuario gana el repartidor
+	De lo contrario gana el usuario
+5.Se inicia de nuevo el juego(juego nuevo)
+=end
+
+#cartas figura-valor
+#baraja 52 cartas
+
+#cartas figura-valor
+#baraja 52 cartas
+=begin
+deck = Deck.new
+hand = Hand.new(deck)
+puts="la baraja tiene #{deck.cards.length} cartas"
+puts="la mano tiene #{hand.cards.length} cartas"
+hand.hit!
+=end
